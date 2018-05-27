@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/dist/static/css/app.5257896311972e34038fd9aadce5772e.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <script type="text/javascript" src="~/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js"></script>
+    <script type="text/javascript" src="~/dist/static/js/vendor.ad177e03803af9b597d2.js"></script>
+    <script type="text/javascript" src="~/dist/static/js/app.b3409d349431866130ce.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
