@@ -14,6 +14,9 @@ npm run dev
 # build for production with minification
 npm run build
 
+npm install sass-loader --save-dev
+npm install --save-dev node-sass
+
 # build for production and view the bundle analyzer report
 npm run build --report
 
