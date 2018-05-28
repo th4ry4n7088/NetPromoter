@@ -17,7 +17,7 @@
           </div>
 
           <md-toolbar :md-elevation="1">
-            <span class="md-subheading">What can we do to  improve?</span>
+            <span class="md-subheading">{{getFeedbackQuestionText()}}</span>
           </md-toolbar>
           <div class="md-layout content">
           <div class="md-layout-item">
@@ -59,7 +59,18 @@ export default {
             .then(result => console.log(result.data))
             .catch(error => console.log(error));
     }
-  }
+  },
+    getFeedbackQuestionText: function(){
+        if(this.remote.rating < 5){
+          return "What can we do to  improve?";
+        }
+        else if(this.remote.rating < 9){
+          return "Is there anything we can do to improve?";
+        }
+        else{
+          return "Is there anything you particularly like?";
+        }
+    }
 }
 </script>
 

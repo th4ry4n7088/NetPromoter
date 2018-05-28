@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /NetPromoter.Web/package-lock.json
+/NetPromoter.Web/Properties/PublishProfiles/Netpromoter - Web Deploy.pubxml

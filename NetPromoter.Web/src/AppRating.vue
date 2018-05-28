@@ -1,9 +1,9 @@
 <template>
   <div class="appRating">
     <Dialogue />
-	<h2>App's User Ratings</h2>
-    <Rating :disabled="true" />
-	<h2>Submit Your Rating</h2>
+	<h3>App's User Ratings</h3>
+    <Rating value="6" :disabled="true" />
+	<h3>Submit Your Rating</h3>
     <Rating :showFeedback="true" />
   </div>
 </template>
